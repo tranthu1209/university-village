@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css"> -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+    <link href="http://fonts.googleapis.com/css?family=Cookie" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="../css/review.css">
+    <link rel="stylesheet" href="../css/main-page.css">
+    <script src="../js/main-page.js"></script>
+    <title>Review</title>
+</head>
+
+<body>
+    <a href="#">
+        <button id="myBtn" title="Go to top">^</button>
+    </a>
+    <header class="l-header">
+        <nav class="nav bd-grid">
+            <div>
+                <a href="./main-page.html" class="nav__logo">
+                    <img class="logo" src="../images/logo.png">
+                </a>
+            </div>
+
+            <div class="nav__toggle">
+                <i class='bx bx-menu'></i>
+            </div>
+
+            <div class="nav__menu">
+                <div class="nav__close">
+                    <i class='bx bx-x'></i>
+                </div>
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="../pages/main-page.html" class="nav__link">TRANG CHỦ</a></li>
+                    <li class="nav__item"><a href="../pages/review.html" class="nav__link current">REVIEW</a></li>
+                    <li class="nav__item"><a href="../pages/news.html" class="nav__link">TIN TỨC</a></li>
+                    <li class="nav__item"><a href="../pages/clubs.html" class="nav__link">CÂU LẠC BỘ</a></li>
+                    <li class="nav__item"><a href="../pages/contact.html" class="nav__link">LIÊN HỆ</a></li>
+                    <li class="nav__item"><a href="../pages/login-page.html" class="nav__link">TÀI KHOẢN</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <div class="main-content">
+        <div id="myBtnContainer">
+            <button class="btn active" onclick="filterSelection('tatca')">TẤT CẢ</button>
+            <button class="btn" onclick="filterSelection('anuong')">ĂN UỐNG</button>
+            <button class="btn" onclick="filterSelection('giaitri')">GIẢI TRÍ</button>
+            <button class="btn" onclick="filterSelection('muaban')">MUA BÁN</button>
+            <button class="btn" onclick="filterSelection('khac')">KHÁC</button>
+        </div>
+        <input type="text" id="Input" onkeyup="Search()" placeholder="Tìm kiếm ..." title="Tìm kiếm bài viết">
+        <div class="container" id="container">
+            <div class="filterDiv anuong">
+                <a href="./review-post.html">
+                    <img class="review-image" src="../images/review/au1.jpg">
+                    <h3>Top những nhà hàng buffet ngon, nổi tiếng quận Thủ Đức</h3>
+                </a>
+            </div>
+            <div class="filterDiv anuong">
+                <a href="./review-post.html">
+                    <img class="review-image" src="../images/review/au2.jpg">
+                    <h3>Những quán chè nổi tiếng tại làng đại học</h3>
+                </a>
+            </div>
+            <div class="filterDiv anuong">
+                <a href="./review-post.html">
+                    <img class="review-image"  src="../images/review/au3.jpg">
+                    <h3>Những địa điểm bán đồ Hàn ngon tại Thủ Đức</h3>
+                </a>
+            </div>
+            <div class="filterDiv anuong">
+                <a href="./review-post.html">
+                    <img class="review-image"  src="../images/review/au4.jpg">
+                    <h3>Top 5 quán nướng ngon tại làng đại học</h3>
+                </a>
+            </div>
+            <div class="filterDiv anuong">
+                <a href="./review-post.html">
+                    <img class="review-image"  src="../images/review/au5.jpg">
+                    <h3>Review lẩu Dookki tại Vincom Thủ Đức</h3>
+                </a>
+            </div>
+            <div class="filterDiv giaitri">
+                <a href="./review-post.html">
+                    <img class="review-image"  src="../images/review/gt1.jpg">
+                    <h3>Review công viên nước Suối Tiên</h3>
+                </a>
+            </div>
+            <div class="filterDiv giaitri">
+                <a href="./review-post.html">
+                    <img class="review-image"  src="../images/review/gt2.jpg">
+                    <h3>Những địa điểm vui chơi nên thử tại làng đại học</h3>
+                </a>
+            </div>
+            <div class="filterDiv giaitri">
+                <a href="./review-post.html">
+                    <img class="review-image"  src="../images/review/gt3.jpg">
+                    <h3>Top các địa điểm vui chơi thu hút nhiều sinh viên nhất</h3>
+                </a>
+            </div>
+            <div class="filterDiv giaitri">
+                <a href="./review-post.html">
+                    <img class="review-image"  src="../images/review/gt1.jpg">
+                    <h3>Review công viên nước Suối Tiên</h3>
+                </a>
+            </div>
+            <div class="filterDiv muaban">
+                <a href="./review-post.html">
+                    <img class="review-image"  src="../images/review/mb1.jpg">
+                    <h3>Những địa điểm bán sách uy tín</h3>
+                </a>
+            </div>
+            <div class="filterDiv muaban">
+                <a href="./review-post.html">
+                    <img class="review-image"  src="../images/review/mb2.jpg">
+                    <h3>Những shop bán quần áo nam đẹp</h3>
+                </a>
+            </div>
+            <div class="filterDiv muaban">
+                <a href="./review-post.html">
+                    <img class="review-image"  src="../images/review/mb3.jpg">
+                    <h3>Top 6 shop quần áo nữ sành điệu</h3>
+                </a>
+            </div>
+            <div class="filterDiv muaban">
+                <a href="./review-post.html">
+                    <img class="review-image"  src="../images/review/mb4.jpeg">
+                    <h3>Các cửa hàng điện tử uy tín tại Thủ Đức</h3>
+                </a>
+            </div>
+            <div class="filterDiv khac">
+                <a href="./review-post.html">
+                    <img class="review-image"  src="../images/review/kh1.jpg">
+                    <h3>Các địa điểm sửa chữa laptop lấy liền uy tín</h3>
+                </a>
+            </div>
+            <div class="filterDiv khac">
+                <a href="./review-post.html">
+                    <img class="review-image"  src="../images/review/kh2.jpg">
+                    <h3>Top những cửa hàng sửa chữa xe máy uy tín</h3>
+                </a>
+            </div>
+            <div class="filterDiv khac">
+                <a href="./review-post.html">
+                    <img class="review-image"  src="../images/review/kh3.jpg">
+                    <h3>Đánh giá trung tâm Phong Vũ</h3>
+                </a>
+            </div>
+            <div class="filterDiv khac">
+                <a href="./review-post.html">
+                    <img class="review-image"  src="../images/review/kh4.jpg">
+                    <h3>Nâng cấp laptop tai Memoryzone</h3>
+                </a>
+            </div>
+
+            <script src="../js/filter and search.js"></script>
+        </div>
+    </div>
+    
+    <footer class="footer-distributed">
+
+        <div class="footer-left">
+            <a href="#" class="footer_logo">Cẩm nang làng đại học</a>
+
+            <p class="footer-links">
+                <a href="./main-page.html">Trang chủ</a>
+                |
+                <a href="./review.html">Review</a>
+                |
+                <a href="./news.html">Tin tức</a>
+                |
+                <a href="./clubs.html">Câu lạc bộ</a>
+                |
+                <a href="./contact.html">Liên hệ</a>
+            </p>
+
+            <p class="footer-company-name">© 2020 IE104.L12 - Internet và công nghệ Web</p>
+        </div>
+
+        <div class="footer-center">
+            <div>
+                <i class="fa fa-map-marker"></i>
+                <p>Khu phố 6, phường Linh Trung,<br> quận Thủ Đức, thành phố Hồ Chí Minh</p>
+            </div>
+
+            <div>
+                <i class="fa fa-phone"></i>
+                <p>+84 706082488</p>
+            </div>
+            <div>
+                <i class="fa fa-envelope"></i>
+                <p><a href="mailto:support@eduonix.com">support@eduonix.com</a></p>
+            </div>
+        </div>
+        <div class="footer-right">
+            <p class="footer-company-about">
+                <span>Về chúng tôi</span>
+            <ul class="about-list">
+                <li>18521581 - Mai Xuân Tú</li>
+                <li>18521645 - Đỗ Quốc Vinh</li>
+                <li>18521464 - Trần Anh Thư</li>
+            </ul>
+            </p>
+            <div class="footer-icons">
+                <a href="#"><i class="fa fa-facebook"></i></a>
+                <a href="#"><i class="fa fa-twitter"></i></a>
+                <a href="#"><i class="fa fa-instagram"></i></a>
+                <a href="#"><i class="fa fa-linkedin"></i></a>
+                <a href="#"><i class="fa fa-youtube"></i></a>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

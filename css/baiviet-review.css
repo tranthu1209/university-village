@@ -1,0 +1,33 @@
+
+/*=== style posts ===*/
+h1{
+    padding: 30px;
+    text-align: center;
+    color: var(--first-color-dark);
+    line-height: 40px;
+}
+h2{
+    line-height: 25px;
+    color: var(--first-color-darken);
+}
+p{
+    line-height: 25px;
+    padding-bottom: 10px;
+}
+.vid{
+    text-align: center;
+    width: 100%;
+    margin: auto;
+}
+#top-href{
+  color: var(--first-color);
+}
+#post-title{
+  color: var(--first-color-darken);
+  font-weight: bold;
+}
+.content {
+    margin-left: 14%;
+    margin-right: 10%;
+
+}

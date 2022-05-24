@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <!-- <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css"> -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../css/main-page.css">
+    <link rel="stylesheet" href="../css/tintuc.css">
+    <link href="http://fonts.googleapis.com/css?family=Cookie" rel="stylesheet" type="text/css">
+    <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+
+    <title>Tin tức</title>
+</head>
+
+<body>
+    <a href="#">
+        <button id="myBtn" title="Go to top">^</button>
+    </a>
+    <header class="l-header">
+        <nav class="nav bd-grid">
+            <div>
+                <a href="./main-page.html" class="nav__logo">
+                    <img class="logo" src="../images/logo.png">
+                </a>
+            </div>
+
+            <div class="nav__toggle" id="nav-toggle">
+                <i class='bx bx-menu'></i>
+            </div>
+
+            <div class="nav__menu" id="nav-menu">
+                <div class="nav__close" id="nav-close">
+                    <i class='bx bx-x'></i>
+                </div>
+
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="../pages/main-page.html" class="nav__link current">TRANG CHỦ</a></li>
+                    <li class="nav__item"><a href="../pages/review.html" class="nav__link">REVIEW</a></li>
+                    <li class="nav__item"><a href="../pages/news.html" class="nav__link current">TIN TỨC</a></li>
+                    <li class="nav__item"><a href="../pages/clubs.html" class="nav__link">CÂU LẠC BỘ</a></li>
+                    <li class="nav__item"><a href="../pages/contact.html" class="nav__link">LIÊN HỆ</a></li>
+                    <li class="nav__item"><a href="../pages/login-page.html" class="nav__link">TÀI KHOẢN</a></li>
+            </div>
+        </nav>
+    </header>
+
+    <div class="content">
+        <div class="main-content">
+            <div id="myBtnContainer">
+                <button class="btn active" onclick="filterSelection('tatca')">TẤT CẢ</button>
+                <button class="btn" onclick="filterSelection('thoisu')">THỜI SỰ</button>
+                <button class="btn" onclick="filterSelection('chuyenlang')">CHUYỆN LÀNG</button>
+                <button class="btn" onclick="filterSelection('bocphot')">BÓC PHỐT</button>
+                <button class="btn" onclick="filterSelection('khac')">KHÁC</button>
+            </div>
+
+            <div class="container">
+                <div class="filterDiv thoisu">
+                    <a href="./news-post.html">
+                        <img src="../images/tintuc/ts1.jpg">
+                        <div class="detail">
+                            <h3>Đóng cửa quán cơm 'bệnh nhân 1440' từng ghé</h3>
+                            <p><i style="font-size:24px" class="fa">&#xf017;</i> 27/12/2020</p>
+                            <p><span>TIỀN GIANG</span> - Quán cơm ở huyện Cái Bè bị phong tỏa, 13 nhân viên được cách ly
+                                sau khi "bệnh nhân 1440" khai đã ghé qua ba hôm trước.</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="filterDiv chuyenlang thoisu khac">
+                    <a href="./news-post.html">
+                        <img src="../images/tintuc/cl1.jpg">
+                        <div class="detail">
+                            <h3>Sinh viên leo rào kiên cố 2m vào hồ "tử thần"</h3>
+                            <p><i style="font-size:24px" class="fa">&#xf017;</i> 25/12/2020</p>
+                            <p>Bất chấp tường rào sắt kiên cố mới được xây dựng, nhiều bạn trẻ vẫn leo vào trong hồ đá -
+                                nơi có nhiều người tử vong - ở làng Đại học Quốc gia TP HCM .</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="filterDiv chuyenlang khac">
+                    <a href="./news-post.html">
+                        <img src="../images/tintuc/cl3.jpg">
+                        <div class="detail">
+                            <h3>Minh 'cô đơn' không biết xài tiền</h3>
+                            <p><i style="font-size:24px" class="fa">&#xf017;</i> 24/12/2020</p>
+                            <p>Hơn hai mươi năm vá xe miễn phí ở Làng Đại học, khi được tặng gần 100 triệu đồng, ông
+                                “Minh cô đơn” chẳng biết tiêu gì nên mua xe tặng sinh viên nghèo.</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="filterDiv chuyenlang thoisu khac bocphot">
+                    <a href="./news-post.html">
+                        <img src="../images/tintuc/cl1.jpg">
+                        <div class="detail">
+                            <h3>Sinh viên leo rào kiên cố 2m vào hồ "tử thần"</h3>
+                            <p><i style="font-size:24px" class="fa">&#xf017;</i> 25/12/2020</p>
+                            <p>Bất chấp tường rào sắt kiên cố mới được xây dựng, nhiều bạn trẻ vẫn leo vào trong hồ đá -
+                                nơi có nhiều người tử vong - ở làng Đại học Quốc gia TP HCM .</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="filterDiv chuyenlang khac">
+                    <a href="./news-post.html">
+                        <img src="../images/tintuc/cl4.jpg">
+                        <div class="detail">
+                            <h3>Chợ đêm sinh viên trong làng đại học TP HCM</h3>
+                            <p><i style="font-size:24px" class="fa">&#xf017;</i> 23/12/2020</p>
+                            <p>Chợ đêm làng đại học Thủ Đức với hơn 200 gian hàng có giá cả bình dân, là nơi sinh viên
+                                mua sắm và thử sức kinh doanh.</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="filterDiv chuyenlang bocphot thoisu">
+                    <a href="./news-post.html">
+                        <img src="../images/tintuc/bp1.jpg">
+                        <div class="detail">
+                            <h3>Mất trộm ở FamilyMart D3 – Ký túc xá Khu B</h3>
+                            <p><i style="font-size:24px" class="fa">&#xf017;</i> 03/12/2020</p>
+                            <p>Vào sáng thứ tư, ngày 02/12/2020 đã xảy ra một vụ lấy cắp đồ tại cửa hàng Family Mart tòa
+                                D3, Ký túc xá khu B Đại học Quốc gia.</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="filterDiv chuyenlang thoisu khac bocphot">
+                    <a href="./news-post.html">
+                        <img src="../images/tintuc/cl1.jpg">
+                        <div class="detail">
+                            <h3>Sinh viên leo rào kiên cố 2m vào hồ "tử thần"</h3>
+                            <p><i style="font-size:24px" class="fa">&#xf017;</i> 25/12/2020</p>
+                            <p>Bất chấp tường rào sắt kiên cố mới được xây dựng, nhiều bạn trẻ vẫn leo vào trong hồ đá -
+                                nơi có nhiều người tử vong - ở làng Đại học Quốc gia TP HCM .</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="filterDiv chuyenlang bocphot thoisu">
+                    <a href="./news-post.html">
+                        <img src="../images/tintuc/bp2.png">
+                        <div class="detail">
+                            <h3>Phốt “Quán ngói nướng 2 Danh” – Đúng, sai thuộc về phần ai?</h3>
+                            <p><i style="font-size:24px" class="fa">&#xf017;</i> 03/12/2020</p>
+                            <p>Dạo gần đây trên mạng xã hội đã “rộ” lên một làn sóng dư luận mạnh mẽ ở các group sinh
+                                viên làng Đại học về vụ việc liên quan giữa xích mích của chủ quán ngói nướng 2 Danh và
+                                bạn T – một sinh viên từng làm ở đây.</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="filterDiv chuyenlang thoisu khac">
+                    <a href="./news-post.html">
+                        <img src="../images/tintuc/cl1.jpg">
+                        <div class="detail">
+                            <h3>Sinh viên leo rào kiên cố 2m vào hồ "tử thần"</h3>
+                            <p><i style="font-size:24px" class="fa">&#xf017;</i> 25/12/2020</p>
+                            <p>Bất chấp tường rào sắt kiên cố mới được xây dựng, nhiều bạn trẻ vẫn leo vào trong hồ đá -
+                                nơi có nhiều người tử vong - ở làng Đại học Quốc gia TP HCM .</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="filterDiv chuyenlang khac bocphot">
+                    <a href="./news-post.html">
+                        <img src="../images/tintuc/cl5.jpg">
+                        <div class="detail">
+                            <h3>Tâm sự của sinh viên ngày quay về ký túc xá Đại học quốc gia TP.HCM</h3>
+                            <p><i style="font-size:24px" class="fa">&#xf017;</i> 10/05/2020</p>
+                            <p>Hàng ngàn sinh viên đã quay trở lại Ký túc xá Đại học quốc gia TP.HCM sau khoảng thời
+                                gian dài rời ký túc xá vì dịch Covid-19.
+                            </p>
+                        </div>
+                    </a>
+                </div>
+                <div class="filterDiv chuyenlang bocphot thoisu">
+                    <a href="./news-post.html">
+                        <img src="../images/tintuc/bp2.png">
+                        <div class="detail">
+                            <h3>Phốt “Quán ngói nướng 2 Danh” – Đúng, sai thuộc về phần ai?</h3>
+                            <p><i style="font-size:24px" class="fa">&#xf017;</i> 03/12/2020</p>
+                            <p>Dạo gần đây trên mạng xã hội đã “rộ” lên một làn sóng dư luận mạnh mẽ ở các group sinh
+                                viên làng Đại học về vụ việc liên quan giữa xích mích của chủ quán ngói nướng 2 Danh và
+                                bạn T – một sinh viên từng làm ở đây.</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="filterDiv chuyenlang khac bocphot">
+                    <a href="./news-post.html">
+                        <img src="../images/tintuc/cl5.jpg">
+                        <div class="detail">
+                            <h3>Tâm sự của sinh viên ngày quay về ký túc xá Đại học quốc gia TP.HCM</h3>
+                            <p><i style="font-size:24px" class="fa">&#xf017;</i> 10/05/2020</p>
+                            <p>Hàng ngàn sinh viên đã quay trở lại Ký túc xá Đại học quốc gia TP.HCM sau khoảng thời
+                                gian dài rời ký túc xá vì dịch Covid-19.
+                            </p>
+                        </div>
+                    </a>
+                </div>
+                <div class="filterDiv chuyenlang thoisu khac">
+                    <a href="./news-post.html">
+                        <img src="../images/tintuc/cl1.jpg">
+                        <div class="detail">
+                            <h3>Sinh viên leo rào kiên cố 2m vào hồ "tử thần"</h3>
+                            <p><i style="font-size:24px" class="fa">&#xf017;</i> 25/12/2020</p>
+                            <p>Bất chấp tường rào sắt kiên cố mới được xây dựng, nhiều bạn trẻ vẫn leo vào trong hồ đá -
+                                nơi có nhiều người tử vong - ở làng Đại học Quốc gia TP HCM .</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="filterDiv chuyenlang khac">
+                    <a href="./news-post.html">
+                        <img src="../images/tintuc/cl6.jpg">
+                        <div class="detail">
+                            <h3>Bữa cơm sinh viên bám trụ lại Sài Gòn trong đại dịch Covid-19</h3>
+                            <p><i style="font-size:24px" class="fa">&#xf017;</i> 25/04/2020</p>
+                            <p>Những ngày này, phần vì hàng quán đều đóng cửa vì đại dịch Covid-19 do chủng mới của
+                                virus corona (SARS-CoV-2), phần vì muốn hạn chế ra đường nên sinh viên tại làng đại học
+                                (quận Thủ Đức, TP.HCM) đã góp tiền với nhau để nấu ăn chung, vừa tiết kiệm, vừa an toàn.
+                            </p>
+                        </div>
+                    </a>
+                </div>
+                <div class="filterDiv chuyenlang thoisu">
+                    <a href="./news-post.html">
+                        <img src="../images/tintuc/cl2.jpg">
+                        <div class="detail">
+                            <h3>Thủ tướng quyết định số phận Làng đại học 'treo' 20 năm</h3>
+                            <p><i style="font-size:24px" class="fa">&#xf017;</i> 24/02/2017</p>
+                            <p>Thủ tướng Nguyễn Xuân Phúc quyết định đưa dự án Làng đại học Đà Nẵng sau 20 năm quy hoạch
+                                treo vào kế hoạch trung hạn để quyết tâm thực hiện.</p>
+                        </div>
+                    </a>
+                </div>
+
+
+
+                <script src="../js/filter and search.js"></script>
+            </div>
+        </div>
+
+
+
+
+        <!-- FOOTER -->
+
+        <footer class="footer-distributed">
+
+            <div class="footer-left">
+                <a href="#" class="footer_logo">Cẩm nang làng đại học</a>
+
+                <p class="footer-links">
+                    <a href="./main-page.html">Trang chủ</a>
+                    |
+                    <a href="./review.html">Review</a>
+                    |
+                    <a href="./news.html">Tin tức</a>
+                    |
+                    <a href="./clubs.html">Câu lạc bộ</a>
+                    |
+                    <a href="./contact.html">Liên hệ</a>
+                </p>
+
+                <p class="footer-company-name">© 2020 IE104.L12 - Internet và công nghệ Web</p>
+            </div>
+
+            <div class="footer-center">
+                <div>
+                    <i class="fa fa-map-marker"></i>
+                    <p>Khu phố 6, phường Linh Trung,<br> quận Thủ Đức, thành phố Hồ Chí Minh</p>
+                </div>
+
+                <div>
+                    <i class="fa fa-phone"></i>
+                    <p>+84 706082488</p>
+                </div>
+                <div>
+                    <i class="fa fa-envelope"></i>
+                    <p><a href="mailto:support@eduonix.com">support@eduonix.com</a></p>
+                </div>
+            </div>
+            <div class="footer-right">
+                <p class="footer-company-about">
+                    <span>Về chúng tôi</span>
+                <ul class="about-list">
+                    <li>18521581 - Mai Xuân Tú</li>
+                    <li>18521645 - Đỗ Quốc Vinh</li>
+                    <li>18521464 - Trần Anh Thư</li>
+                </ul>
+                </p>
+                <div class="footer-icons">
+                    <a href="#"><i class="fa fa-facebook"></i></a>
+                    <a href="#"><i class="fa fa-twitter"></i></a>
+                    <a href="#"><i class="fa fa-instagram"></i></a>
+                    <a href="#"><i class="fa fa-linkedin"></i></a>
+                    <a href="#"><i class="fa fa-youtube"></i></a>
+                </div>
+            </div>
+        </footer>
+        <script src="../js/main-page.js"></script>
+</body>
+
+</html>
